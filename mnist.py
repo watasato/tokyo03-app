@@ -7,8 +7,8 @@ from tensorflow.keras.preprocessing import image
 import numpy as np
 
 
-classes = ["0","1","2","3","4","5","6","7","8","9"]
-image_size = 28
+classes = ["0","1","2"]
+image_size = 50
 
 UPLOAD_FOLDER = "uploads"
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])
