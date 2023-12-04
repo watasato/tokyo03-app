@@ -39,7 +39,7 @@ def upload_file():
             #受け取った画像を読み込み、np形式に変換
             img = image.load_img(filepath, grayscale=True, target_size=(image_size,image_size))
             img = image.img_to_array(img)
-            data = array([img])
+            data = np.array([img])
             #変換したデータをモデルに渡して予測する
             result = model.predict(data)[0]
             predicted = result.argmax()
