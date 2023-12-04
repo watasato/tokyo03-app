@@ -1,3 +1,4 @@
+os.environ['TF_XLA_FLAGS'] = '--tf_xla_enable_xla_devices'
 import os
 from flask import Flask, request, redirect, render_template, flash
 from werkzeug.utils import secure_filename
