@@ -5,7 +5,6 @@ from tensorflow.keras.models import Sequential, load_model
 from tensorflow.keras.preprocessing import image
 
 import numpy as np
-os.environ['TF_XLA_FLAGS'] = '--tf_xla_enable_xla_devices'
 
 classes = ["0","1","2"]
 image_size = 50
